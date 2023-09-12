@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-container {
+  padding: 20px;
+  margin: 0;
+  background-color: rgb(2, 114, 139);
+  align-items: center;
+  height: 90px;
+}
+.nav-title {
+  color: white;
+}
+.btn {
+  margin-left: 5px;
+}
+.cart-widget {
+  display: flex;
+}
+.cart {
+  height: 30px;
+}
