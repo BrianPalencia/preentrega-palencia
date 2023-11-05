@@ -5,5 +5,5 @@
     background-color: rgb(2, 114, 139);
     margin: 5px;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }

@@ -56,3 +56,19 @@
 .cart {
   height: 30px;
 }
+.cartnumber {
+  display: inline-block;
+  position: relative;
+}
+.cartnumber span {
+  bottom: 0;
+  right: -10px;
+  position: absolute;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  display: block;
+  border-radius: 50%;
+  background: red;
+}

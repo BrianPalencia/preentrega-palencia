@@ -24,7 +24,7 @@ function CheckOut({ products }) {
                 </div>
             )}
             <p>Total a pagar: ${total.toLocaleString("es-GT")}</p>
-            <Link to="/">Volver</Link>
+            <button className="volver"><Link to="/">Volver</Link></button>
         </>
     )
 }
