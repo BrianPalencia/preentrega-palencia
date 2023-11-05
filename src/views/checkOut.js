@@ -13,7 +13,7 @@ function CheckOut({ products }) {
     }, [products])
     return (
         <>
-        <p>Gracias por Preferirnos</p>
+        <p className="message">Gracias por Preferirnos</p>
             {products.map((product) =>
                 <div className="cart-info-container" key={product.id}>
                     <picture className="Imagen">
