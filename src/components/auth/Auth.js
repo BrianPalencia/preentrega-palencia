@@ -1,5 +1,6 @@
 import { signInWithPopup, signOut } from 'firebase/auth'
 import { auth, googleProvider } from '../../firebase/firebase.config'
+import "./auth.css"
 
 function Auth () {
     const signInWithGoogle = async () => {
@@ -11,10 +12,10 @@ function Auth () {
     }
     
     return (
-        <div>
+        <div className='inicio-sesion'>
             {auth?.currentUser?.displayName}
-            <button onClick={logOut}>Salir</button>
             <button onClick={signInWithGoogle}>Ingresar con Google</button>
+            <button onClick={logOut}>Salir</button>
         </div>
     )
 }

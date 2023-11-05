@@ -3,9 +3,12 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background-color: rgb(2, 114, 139);
+    color: black;
+    margin: 5px 60px 5px 60px;
     
 }
 
 .Imagen img {
-    height: 50px;
+    height: 150px;
 }
