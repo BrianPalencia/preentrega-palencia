@@ -1,5 +1,3 @@
-//import Producto from "./pages/producto"
-
 const lista_productos = [
     {
         "id": 1,
@@ -10,9 +8,7 @@ const lista_productos = [
         "image": "/assets/103922829_1.webp",
         "stock": 50,
         "rating": {
-            "rate": 4.9,
-
-            "lala": 5
+            "rate": 4.9
         }
     },
     {
@@ -66,6 +62,126 @@ const lista_productos = [
             "rate": 4.6
 
         }
+    },
+    {
+        "id": 6,
+        "title": "Gorra RedBull Racing",
+        "price": 99.99,
+        "description": "Gorra de RedBull Racing de formula 1",
+        "category": "gorras",
+        "image": "/assets/redbull.webp",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 7,
+        "title": "Gorra Ferrari",
+        "price": 99.99,
+        "description": "Gorra del equipo Ferrari de Formula 1",
+        "category": "gorras",
+        "image": "/assets/ferrari.jpg",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 8,
+        "title": "Sombrero de Paja",
+        "price": 49.99,
+        "description": "Sombrero de paja con cinta negra",
+        "category": "sombreros",
+        "image": "/assets/sombreropaja.webp",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 9,
+        "title": "Sombrero Mexicano",
+        "price": 59.99,
+        "description": "Sombrero con decoracion mexicana",
+        "category": "sombreros",
+        "image": "/assets/sombreromexicano.jpg",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 10,
+        "title": "Sombrero Indiana",
+        "price": 49.99,
+        "description": "Sombrero indiana de gamuza",
+        "category": "sombreros",
+        "image": "/assets/sombreroINDIANAGAMUZA.jpg",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 11,
+        "title": "Sombrero de Copa",
+        "price": 49.99,
+        "description": "Sombrero Negro de Copa",
+        "category": "sombreros",
+        "image": "/assets/sombrerocopa.jpg",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 12,
+        "title": "Gorro Nike",
+        "price": 49.99,
+        "description": "Gorro Nike color gris",
+        "category": "gorros",
+        "image": "/assets/gorronike.jpg",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 13,
+        "title": "Gorro Beanie",
+        "price": 49.99,
+        "description": "Gorro Beanie color gris",
+        "category": "gorros",
+        "image": "/assets/gorrobeanie.webp",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 14,
+        "title": "Gorro Tommy",
+        "price": 49.99,
+        "description": "Gorro Tommy color negro",
+        "category": "gorros",
+        "image": "/assets/gorrotommy.avif",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 15,
+        "title": "Gorro Raidres",
+        "price": 49.99,
+        "description": "Gorro de los Raiders color blanco y negro",
+        "category": "gorros",
+        "image": "/assets/gorroraiders.jpg",
+        "stock": 50,
+        "rating": {
+            "rate": 4.9
+        }
     }
 ]
 
@@ -86,7 +202,7 @@ export const getProductById = (idProduct) => {
 
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(lista_productos.find(prod => prod.id == idProduct))
+            resolve(lista_productos.find(prod => prod.id === Number(idProduct)))
         }, 500);
 
     })
@@ -97,7 +213,7 @@ export const getProductsByCategory = (category) => {
 
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(lista_productos.filter(prod => prod.category == category))
+            resolve(lista_productos.filter(prod => prod.category === category))
         }, 500);
     })
 

@@ -1,6 +1,8 @@
 import CartWidget from "../CartWidget/CartWidget";
+import Auth from "../auth/Auth"
 import { NavLink, Link } from "react-router-dom";
-const NavBar = () => {
+
+const NavBar = ({total}) => {
     return (
         <nav className="nav-container columns" role="navigation" aria-label="main navigation">
             <Link to="/">
@@ -25,7 +27,8 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <CartWidget/>
+            <CartWidget total={total} />
+            <Auth />
         </nav>
     )
 }

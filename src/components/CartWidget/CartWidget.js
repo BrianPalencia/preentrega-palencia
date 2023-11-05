@@ -1,10 +1,11 @@
 import cart from './assets/cart.png'
+import { Link } from "react-router-dom";
 
-const CartWidget = () => {
+const CartWidget = ({total}) => {
     return (
         <div className='column is-2 cart-widget'>
-            <img className='cart' src={cart} alt="cart-widget"/>
-            0
+            <Link className='cartnumber' to="/cart"><img className='cart' src={cart} alt="cart-widget"/>
+            {total}</Link>
         </div>
     )
 }

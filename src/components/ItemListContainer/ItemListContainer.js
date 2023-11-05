@@ -12,8 +12,6 @@ function ItemListContainer ({greeting}){
 
     const { categoryId } = useParams();
 
-    console.log("La categoria que llego aca es:", categoryId)
-
     useEffect(()=>{
 
         const asyncFunc = categoryId ? getProductsByCategory : getProductos

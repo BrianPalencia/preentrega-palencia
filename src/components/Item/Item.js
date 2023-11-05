@@ -4,9 +4,6 @@ import "./Item.css"
 
 
 function Item ({id, title, image, price, stock }){
-
-    console.log(stock)
-
     return (
         <article className="CardItem">
             <header className="CardItemHeader">

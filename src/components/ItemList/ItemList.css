@@ -1,5 +1,6 @@
 .ListGroup{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     background-color: rgb(2, 114, 139);
     margin: 5px;
